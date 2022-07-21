@@ -14,7 +14,7 @@ const reducer = (state = initialState, action) => {
         case actions.DECREMENT_VALUE:
             return {
                 ...state,
-                value: action.value - 1,
+                value: state.value - 1,
             };
         default:
             return state;
