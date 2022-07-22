@@ -9,12 +9,12 @@ const reducer = (state = initialState, action) => {
         case actions.INCREMENT_VALUE: 
             return {
                 ...state,
-                value: state.value + action.value,
+                value: state.value + action.payload,
             };
         case actions.DECREMENT_VALUE:
             return {
                 ...state,
-                value: state.value - action.value,
+                value: state.value - action.payload,
             };
         default:
             return state;
